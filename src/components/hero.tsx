@@ -148,7 +148,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative bg-[#0c1425] text-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-16 px-6 relative z-20">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-24 px-6 relative z-20">
         {/* Left Side: Title Slider */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-6xl font-black lg:text-6xl font-bold mb-4 leading-tight transition duration-500">

@@ -17,8 +17,8 @@ interface Product {
       price: "3500Rs",
       gender: "men",
       image: "/hublot/green.jpeg",
-      images: ["/images/hublot/green.jpeg", "/images/hublot/blue.jpeg"],
-    },
+      images: ["/images/hublot/green.jpeg", "/images/hublot/blue.jpeg", "/images/hublot/red.jpeg"],
+    },  
     {
       id: 2,
       title: "LED Touch Digital",

@@ -37,7 +37,7 @@ const ProductPage: React.FC = (props: any) => {
 
       <div className="container mx-auto px-6 py-16 relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between">
         {/* Left: Image Crawler */}
-        <div className="md:w-1/2 flex flex-col items-center">
+        <div className="md:w-1/2 flex flex-col items-center w-[90%]">   
           <div
             className={`w-full h-96 bg-[#fff] rounded-lg overflow-hidden flex justify-center items-center relative ${
               isZoomed ? "cursor-crosshair" : ""
