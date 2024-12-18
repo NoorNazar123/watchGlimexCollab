@@ -4,6 +4,10 @@ import { useRouter } from "next/navigation";
 import OrderModal from "./ordermodal";
 import { products } from "@/data/productdata";
 
+
+
+
+ 
 const ProductPage: React.FC = (props: any) => {
   const params: any = use(props.params);
   const id = Number(params.slug);
@@ -37,9 +41,9 @@ const ProductPage: React.FC = (props: any) => {
 
       <div className="container mx-auto px-6 py-16 relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between">
         {/* Left: Image Crawler */}
-        <div className="md:w-1/2 flex flex-col items-center w-[90%]">   
+        <div className="md:w-1/2 flex flex-col items-center w-[90%] ">   
           <div
-            className={`w-full h-96 bg-[#fff] rounded-lg overflow-hidden flex justify-center items-center relative ${
+            className={`w-full h-96  shadow-2xl border-black rounded-lg  overflow-hidden flex justify-center items-center relative ${
               isZoomed ? "cursor-crosshair" : ""
             }`}
             onMouseMove={isZoomed ? handleMouseMove : undefined}
@@ -118,3 +122,4 @@ const ProductPage: React.FC = (props: any) => {
 };
 
 export default ProductPage;
+

@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-center">
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <SocialLink />
-        </div>
+         </div>
 
         {/* Contact Information */}
         <div className="text-center md:text-left">
@@ -53,7 +53,7 @@ const Footer = () => {
     </a>
   </p>
   <p className="text-sm">We are available 24/7 for your convenience!</p>
-</div>
+       </div>
 
       </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-  );
+  );  
 };
 
 export default Footer;

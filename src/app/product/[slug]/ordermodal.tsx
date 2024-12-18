@@ -140,7 +140,11 @@ const OrderModal: React.FC<{
 
 export default OrderModal;
 
-
+function generateMetadata(){
+  return {
+    title: "Products",  
+  }
+}     
 
 // import { useState } from "react";
 
