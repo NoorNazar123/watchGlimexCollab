@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 const Hero: React.FC = () => {
-  const titles = [
+  const titles = [ 
     {
       title: "Hublot",
       desc: "Discover our exquisite collection of watches, combining style and precision for a truly timeless experience.",
@@ -14,36 +14,36 @@ const Hero: React.FC = () => {
       img: "ledTouchDigitalWomen.png",
     },
     {
-      title: "Xenlex",
+      title: "Xenlex", 
       desc: "Discover our collection of watches, combining style and precision for a truly timeless experience.",
-      img: "xenlexSliders.png",
+      img: "xenlexSlider.png",
     },
     {
       title: "Audemars Piguet",
       desc: "Indulge in unparalleled luxury and precise craftsmanship with our iconic Audemars Piguet collection.",
-      img: "audemarsPiguetSliders.png",
-    },
+      img: "audemarsPiguet.png",
+    },  
     {
       title: "Rolex Oyster Perpetual",
       desc: "Embrace sophistication and prestige with our Rolex collection, perfect for formal occasions.",
-      img: "rolexSliders.png",
+      img: "rolexSlider.png",
     },
     {
       title: "Patek Philippe",
       desc: "Timeless design meets unrivaled craftsmanship in our Patek Philippe collection, ideal for collectors.",
-      img: "patekPhilippeSliders.png",
+      img: "patekPhilippe.png",
     },
     {
       title: "Tag Heuer Automatic",
       desc: "Durable and precise, our Tag Heuer Automatic watches are built for sporty adventures and elegance.",
-      img: "tagHeuerAutomatic.png",
+      img: "HeuerAutomatic.png",
     },
-    {
+    {       
       title: "Tag Heuer Carrera",
       desc: "Rugged performance meets sophisticated aesthetics in our Tag Heuer Carrera collection.",
-      img: "tagHeuerCarreraSliders.png",
+      img: "tagHeuerCarrera.png",
     },
-    {
+    { 
       title: "Tag Heuer Monaco",
       desc: "Exude confidence and heritage with the bold design of our Tag Heuer Monaco collection.",
       img: "tagHeuerMonaco.png",
@@ -51,14 +51,71 @@ const Hero: React.FC = () => {
     {
       title: "TISSOT",
       desc: "Quartz movement, all inner dials working, steel bracelet with great quality and finishing. Quantity available.",
-      img: "tissotSliders.png",
+      img: "tissotSlider.png",
     },
     {
       title: "ROLEX",
       desc: "Quartz movement, GMT working, date working, rotatable bezel with great quality and finishing. Price: 3500 Rs.",
-      img: "rolexQSliders.png",
+      img: "rolexQSlider.png",
     },
-  ];
+  ]; 
+  // const titles = [
+  //   {
+  //     title: "Hublot",
+  //     desc: "Discover our exquisite collection of watches, combining style and precision for a truly timeless experience.",
+  //     img: "hublot.png",
+  //   },
+  //   {
+  //     title: "LED Touch Digital",
+  //     desc: "Experience modern digital convenience with our sleek LED touch watches, perfect for any occasion.",
+  //     img: "ledTouchDigitalWomen.png",
+  //   },
+  //   {
+  //     title: "Xenlex",
+  //     desc: "Discover our collection of watches, combining style and precision for a truly timeless experience.",
+  //     img: "xenlexSliders.png",
+  //   },
+  //   {
+  //     title: "Audemars Piguet",
+  //     desc: "Indulge in unparalleled luxury and precise craftsmanship with our iconic Audemars Piguet collection.",
+  //     img: "audemarsPiguetSliders.png",
+  //   },
+  //   {
+  //     title: "Rolex Oyster Perpetual",
+  //     desc: "Embrace sophistication and prestige with our Rolex collection, perfect for formal occasions.",
+  //     img: "rolexSliders.png",
+  //   },
+  //   {
+  //     title: "Patek Philippe",
+  //     desc: "Timeless design meets unrivaled craftsmanship in our Patek Philippe collection, ideal for collectors.",
+  //     img: "patekPhilippeSliders.png",
+  //   },
+  //   {
+  //     title: "Tag Heuer Automatic",
+  //     desc: "Durable and precise, our Tag Heuer Automatic watches are built for sporty adventures and elegance.",
+  //     img: "tagHeuerAutomatic.png",
+  //   },
+  //   {
+  //     title: "Tag Heuer Carrera",
+  //     desc: "Rugged performance meets sophisticated aesthetics in our Tag Heuer Carrera collection.",
+  //     img: "tagHeuerCarreraSliders.png",
+  //   },
+  //   {
+  //     title: "Tag Heuer Monaco",
+  //     desc: "Exude confidence and heritage with the bold design of our Tag Heuer Monaco collection.",
+  //     img: "tagHeuerMonaco.png",
+  //   },
+  //   {
+  //     title: "TISSOT",
+  //     desc: "Quartz movement, all inner dials working, steel bracelet with great quality and finishing. Quantity available.",
+  //     img: "tissotSliders.png",
+  //   },
+  //   {
+  //     title: "ROLEX",
+  //     desc: "Quartz movement, GMT working, date working, rotatable bezel with great quality and finishing. Price: 3500 Rs.",
+  //     img: "rolexQSliders.png",
+  //   },
+  // ];
   
   // const titles = [
   //   {
