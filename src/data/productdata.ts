@@ -162,10 +162,18 @@ interface Product {
       price: "3500Rs",
       gender: "men",
       image: "/rolex/silverBlack.jpeg",
-      images: ["/images/rolex/silverBlack.jpeg", "/images/rolex/silverBlackRed.jpeg", "/images/rolex/silverGolden.jpeg" ,"/images/rolex/silverRedBlue.jpeg", "/images/rolex/blackSilver.jpeg", "/images/rolex/goldenBlack.jpeg", "/images/rolex/goldenBlackSilver.jpeg", "/images/rolex/goldenGray.jpeg"],
+      images: [
+        "/images/rolex/silverBlack.jpeg", 
+        "/images/rolex/silverBlackRed.jpeg", 
+        "/images/rolex/silverGolden.jpeg" ,
+        "/images/rolex/silverRedBlue.jpeg", 
+        "/images/rolex/blackSilver.jpeg",
+         "/images/rolex/goldenBlack.jpeg", 
+         "/images/rolex/goldenBlackSilver.jpeg", 
+         "/images/rolex/goldenGray.jpeg"],
     },
-  ];
-
+  ]; 
+ 
   
 // export const products: Product[] = [
 //     {
