@@ -1,5 +1,6 @@
 import React from "react";
 import SocialLink from "./SocialLink";
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -7,16 +8,20 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Description */}
+        
         <div className="flex flex-col items-start text-center md:text-left">
-          <img
-            src="/images/watchglamixlogo.png"
-            alt="Logo"
-            className="w-40 mb-4 mx-auto md:mx-0"
-          />
+        <Link href="/">
+  <img
+    src="/images/watchglamixlogo.png"
+    alt="Logo"
+    className="w-40 mb-4 mx-auto md:mx-0"
+  />
+</Link>
          <p className="text-sm">
   Discover timeless elegance with our premium watches. Shop WatchGlamix today!
 </p>
         </div>
+        
 
         {/* Social Media Links */}
         <div className="flex flex-col items-center md:items-center">
