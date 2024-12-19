@@ -53,7 +53,7 @@ const OrderModal: React.FC<{
       console.error("Error submitting order:", error);
       alert("An error occurred while placing your order. Please try again.");
     }
-  };
+  };      
 
   return (
     <div

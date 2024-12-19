@@ -4,10 +4,6 @@ import { useRouter } from "next/navigation";
 import OrderModal from "./ordermodal";
 import { products } from "@/data/productdata";
 
-
-
-
-
 const ProductPage: React.FC = (props: any) => {
   const params: any = use(props.params);
   const id = Number(params.slug);
@@ -65,7 +61,7 @@ const ProductPage: React.FC = (props: any) => {
           </div>
           <div className="flex mt-4 space-x-4 overflow-auto">
             {product.images.map((image: any, index: number) => (
-              <img
+              <img 
                 key={index}
                 src={image}
                 alt={`Variant ${index + 1}`}
