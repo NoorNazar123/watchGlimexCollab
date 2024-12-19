@@ -2,81 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { products } from "@/data/productdata";
 
-// const products: Product[] = [
-//   {
-//     id: 1,
-//     title: "Hublot",
-//     description:
-//       "Elegant and precise craftsmanship.and precise craftsmanship and precise craftsmanship.",
-//     price: "3500 Rs",
-//     gender: "men",
-//     image: "", // Replace with your image paths
-//   },
-//   {
-//     id: 2,
-//     title: "LED Touch Digital",
-//     description: "Perfect for every occasion.",
-//     gender: "women",
-//     price: "1500 Rs",
-//     image: "/ledtouch.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 3,
-//     title: "Xenlex Gents",
-//     description: "Timeless style and durability.",
-//     price: "3000 Rs",
-//     gender: "men",
-//     image: "/xenlex.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 4,
-//     title: "Audemars Piguet",
-//     description: "Elegant and precise craftsmanship.",
-//     price: "18000 Rs",
-//     gender: "men",
-//     image: "/hublot.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 5,
-//     title: "Rolex Watch",
-//     description: "Perfect for every occasion.",
-//     price: "1500 Rs",
-//     gender: "men",
-//     image: "/ledtouch.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 6,
-//     title: "Patex Philippe",
-//     description: "Perfect for every occasion.",
-//     price: "18000 Rs",
-//     gender: "men",
-//     image: "/ledtouch.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 7,
-//     title: "Tag Heuer Autamatic",
-//     description: "Timeless style and durability.",
-//     price: "18000 Rs",
-//     gender: "men",
-//     image: "/xenlex.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 8,
-//     title: "Tag Heuer Master",
-//     description: "Timeless style and durability.",
-//     price: "18000 Rs",
-//     gender: "men",
-//     image: "/xenlex.jpeg", // Replace with your image paths
-//   },
-//   {
-//     id: 9,
-//     title: "Tag Heuer Monaca",
-//     description: "Timeless style and durability.",
-//     price: "18000 Rs",
-//     gender: "men",
-//     image: "/xenlex.jpeg", // Replace with your image paths
-//   },
-// ];
+
 
 const ProductSection: React.FC = () => {
   return (
@@ -108,7 +34,7 @@ const ProductSection: React.FC = () => {
                     {product.description}
                   </p>
                   <div className="text-lg font-semibold text-blue-400 mb-4">
-                   <span className="text-red-500 line-through">{Number(product.price.replace('Rs','')) * 1.2}Rs</span> | <span className="text-white">{product.price}</span>
+                    <span className="text-red-500 line-through">{Number(product.price.replace('Rs', '')) * 1.2}Rs</span> | <span className="text-white">{product.price}</span>
                   </div>
                   <a
                     href="#"

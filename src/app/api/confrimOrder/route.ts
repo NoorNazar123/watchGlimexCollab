@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 const sendgrid = require('@sendgrid/mail');
 
 const apiKey = process.env.SENDGRID_API_KEY;
-console.log(apiKey,"apiKey")
+console.log(apiKey, "apiKey")
 if (!apiKey) {
   throw new Error('SENDGRID_API_KEY is not defined');
 }

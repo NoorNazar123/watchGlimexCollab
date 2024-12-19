@@ -7,7 +7,7 @@ import { products } from "@/data/productdata";
 
 
 
- 
+
 const ProductPage: React.FC = (props: any) => {
   const params: any = use(props.params);
   const id = Number(params.slug);
@@ -41,11 +41,10 @@ const ProductPage: React.FC = (props: any) => {
 
       <div className="container mx-auto px-6 py-16 relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between">
         {/* Left: Image Crawler */}
-        <div className="md:w-1/2 flex flex-col items-center w-[90%] ">   
+        <div className="md:w-1/2 flex flex-col items-center w-[90%] ">
           <div
-            className={`w-full h-96  shadow-2xl border-black rounded-lg  overflow-hidden flex justify-center items-center relative ${
-              isZoomed ? "cursor-crosshair" : ""
-            }`}
+            className={`w-full h-96  shadow-2xl border-black rounded-lg  overflow-hidden flex justify-center items-center relative ${isZoomed ? "cursor-crosshair" : ""
+              }`}
             onMouseMove={isZoomed ? handleMouseMove : undefined}
             onMouseEnter={() => setIsZoomed(true)}
             onMouseLeave={() => setIsZoomed(false)}
@@ -53,14 +52,13 @@ const ProductPage: React.FC = (props: any) => {
             <img
               src={activeImage}
               alt={product.title}
-              className={`absolute z-10 max-h-full max-w-full w-full h-full object-contain transition-transform duration-300 ${
-                isZoomed ? "scale-150" : "scale-100"
-              }`}
+              className={`absolute z-10 max-h-full max-w-full w-full h-full object-contain transition-transform duration-300 ${isZoomed ? "scale-150" : "scale-100"
+                }`}
               style={
                 isZoomed
                   ? {
-                      transformOrigin: `${position.x}% ${position.y}%`,
-                    }
+                    transformOrigin: `${position.x}% ${position.y}%`,
+                  }
                   : undefined
               }
             />
@@ -71,9 +69,8 @@ const ProductPage: React.FC = (props: any) => {
                 key={index}
                 src={image}
                 alt={`Variant ${index + 1}`}
-                className={`w-20 h-20 object-cover rounded-lg cursor-pointer border-2 ${
-                  activeImage === image ? "border-blue-600" : "border-gray-300"
-                }`}
+                className={`w-20 h-20 object-cover rounded-lg cursor-pointer border-2 ${activeImage === image ? "border-blue-600" : "border-gray-300"
+                  }`}
                 onClick={() => setActiveImage(image)}
               />
             ))}
@@ -90,7 +87,7 @@ const ProductPage: React.FC = (props: any) => {
             <span className="text-2xl text-red-500 line-through">
               {actualPrice}Rs
             </span>
-            
+
             <span className="text-gray-400 text-3xl">|</span>
             <span className="text-2xl font-semibold text-white">
               {discountedPrice}
