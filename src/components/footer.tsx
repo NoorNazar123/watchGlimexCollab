@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Description */}
         
-        <div className="flex flex-col items-start text-center md:text-left">
+        <div className="flex flex-col items-center  md:items-start md:text-left">
         <Link href="/">
   <img
     src="/images/watchglamixlogo.png"
