@@ -172,6 +172,23 @@ interface Product {
          "/images/rolex/goldenBlackSilver.jpeg", 
          "/images/rolex/goldenGray.jpeg"],
     },
+    {
+      "id": 12,
+      "title": "Quartz",
+      "description": "New Arrival! Stone case, available in 6 vibrant colors.",
+      "price": "1800Rs",
+      "gender": "women",
+      "image": "/quartz/silver.jpeg",     
+      "images": [
+        "/images/quartz/lightGolden.jpeg",
+        "/images/quartz/silverBlack.jpeg",
+        "/images/quartz/silverGolden.jpeg",
+        "/images/quartz/silverwhite.jpeg",
+        "/images/quartz/silver.jpeg",
+        "/images/quartz/silverLightBlack.jpeg",
+      ]
+    }
+    
   ]; 
  
   
