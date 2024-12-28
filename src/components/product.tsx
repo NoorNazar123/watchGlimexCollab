@@ -30,23 +30,23 @@ const ProductSection: React.FC = () => {
                 {/* Product Details */}
                 <div className="relative z-10 p-4">
                   <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                  <p className="text-gray-300 mb-4 line-clamp-3">
+                  <p className="text-gray-300 mb-4 line-clamp-3 min-h-[75px]">
                     {product.description}
                   </p>
                   <div className="text-lg font-semibold text-blue-400 mb-4">
                     <span className="text-red-500 line-through">{Number(product.price.replace('Rs', '')) * 1.2}Rs</span> | <span className="text-white">{product.price}</span>
-                  </div>
+                  </div> 
                   <a
                     href="#"
-                    className="bg-blue-600 hover:bg-blue-700 my-3 text-white py-3 px-6 rounded-lg text-lg transition duration-300"
+                    className="bg-[#374151] hover:bg-[#11141a] my-3 text-white py-3 px-6 rounded-lg text-lg transition duration-300"
                   >
                     See more
                   </a>
                 </div>
               </div>
             </Link>
-          ))}
-        </div>
+          ))}        
+        </div>       
       </div>
 
       {/* Decorative Background Shapes */}

@@ -82,11 +82,11 @@ const Hero: React.FC = () => {
             {titles[currentTitleIndex].title}
           </h1>
           <p className="text-gray-300 text-[18px] md:text-lg mb-6">
-            {titles[currentTitleIndex].desc}
+            {titles[currentTitleIndex].desc}      
           </p>
           <a
             href="#products"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300"
+            className="hover:bg-[#374151] bg-[#11141a] text-white py-3 px-6 rounded-lg text-lg transition duration-300"
           >
             Shop Now
           </a>
