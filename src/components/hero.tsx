@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Button from "./Button";
 
 const Hero: React.FC = () => {
-  const titles = [ 
+  const titles = [
     {
       title: "Hublot",
       desc: "Discover our exquisite collection of watches, combining style and precision for a truly timeless experience.",
@@ -14,7 +15,7 @@ const Hero: React.FC = () => {
       img: "ledTouchDigitalWomen.png",
     },
     {
-      title: "Xenlex", 
+      title: "Xenlex",
       desc: "Discover our collection of watches, combining style and precision for a truly timeless experience.",
       img: "xenlexSlider.png",
     },
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
       title: "Audemars Piguet",
       desc: "Indulge in unparalleled luxury and precise craftsmanship with our iconic Audemars Piguet collection.",
       img: "audemarsPiguet.png",
-    },  
+    },
     {
       title: "Rolex Oyster ",
       desc: "Embrace sophistication and prestige with our Rolex collection, perfect for formal occasions.",
@@ -38,12 +39,12 @@ const Hero: React.FC = () => {
       desc: "Durable and precise, our Tag Heuer Automatic watches are built for sporty adventures and elegance.",
       img: "HeuerAutomatic.png",
     },
-    {       
+    {
       title: "Tag Heuer Carrera",
       desc: "Rugged performance meets sophisticated aesthetics in our Tag Heuer Carrera collection.",
       img: "tagHeuerCarrera.png",
     },
-    { 
+    {
       title: "Tag Heuer Monaco",
       desc: "Exude confidence and heritage with the bold design of our Tag Heuer Monaco collection.",
       img: "tagHeuerMonaco.png",
@@ -58,9 +59,8 @@ const Hero: React.FC = () => {
       desc: "Quartz movement, GMT working, date working, rotatable bezel with great quality and finishing. Price: 3500 Rs.",
       img: "rolexQSlider.png",
     },
-  ]; 
- 
-  
+  ];
+
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
 
   // Automatically change titles every 3 seconds
@@ -82,14 +82,19 @@ const Hero: React.FC = () => {
             {titles[currentTitleIndex].title}
           </h1>
           <p className="text-gray-300 text-[18px] md:text-lg mb-6">
-            {titles[currentTitleIndex].desc}      
+            {titles[currentTitleIndex].desc}
           </p>
-          <a
+          {/* <a
             href="#products"
             className="hover:bg-[#374151] bg-[#11141a] text-white py-3 px-6 rounded-lg text-lg transition duration-300"
           >
             Shop Now
-          </a>
+          </a> */}
+          <Button
+            children="Shop Now"
+            href="#products"
+            className="px-[35px] py-[15px]"
+          />
         </div>
 
         {/* Right Side: Watch Image */}

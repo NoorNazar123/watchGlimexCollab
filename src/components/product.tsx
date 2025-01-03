@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { products } from "@/data/productdata";
-
-
+import Button from "./Button";
 
 const ProductSection: React.FC = () => {
   return (
@@ -14,7 +13,7 @@ const ProductSection: React.FC = () => {
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 cursor-pointer">
           {products.map((product) => (
             <Link href={`/product/${product.id}`} key={product.id}>
-              <div className="relative bg-[#202935] text-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 z-30">
+              <div className="relative bg-[#202935] text-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 pb-[8px] z-30">
                 {/* Decorative Background */}
                 <div className="absolute inset-0">
                   <div className="absolute -top-10 -left-10 w-56 h-56 bg-blue-700 opacity-30 blur-2xl rounded-full"></div>
@@ -34,19 +33,23 @@ const ProductSection: React.FC = () => {
                     {product.description}
                   </p>
                   <div className="text-lg font-semibold text-blue-400 mb-4">
-                    <span className="text-red-500 line-through">{Number(product.price.replace('Rs', '')) * 1.2}Rs</span> | <span className="text-white">{product.price}</span>
-                  </div> 
-                  <a
+                    <span className="text-red-500 line-through">
+                      {Number(product.price.replace("Rs", "")) * 1.2}Rs
+                    </span>{" "}
+                    | <span className="text-white">{product.price}</span>
+                  </div>
+                  <Button children="See more" href="#" />
+                  {/* <a
                     href="#"
                     className="bg-[#374151] hover:bg-[#11141a] my-3 text-white py-3 px-6 rounded-lg text-lg transition duration-300"
                   >
                     See more
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </Link>
-          ))}        
-        </div>       
+          ))}
+        </div>
       </div>
 
       {/* Decorative Background Shapes */}
