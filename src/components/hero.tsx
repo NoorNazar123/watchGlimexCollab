@@ -75,21 +75,24 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative bg-[#0c1425] text-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between py-10 md:py-24 px-6 relative z-20">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between py-10 md:py-44 px-6 relative z-20">
         {/* Left Side: Title Slider */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl font-black lg:text-6xl font-bold mb-4 leading-[35px] transition duration-600">
+          <h1 className="text-4xl font-black lg:text-6xl mb-4 leading-[35px] transition duration-600">
             {titles[currentTitleIndex].title}
           </h1>
-          <p className="text-gray-300 text-[18px] md:text-lg mb-6">
+          <p className="text-gray-300 text-[18px] md:text-lg my-6 py-4">
             {titles[currentTitleIndex].desc}
           </p>
 
-          <Button
-            children="Shop Now"
+          <a
             href="#products"
-            className="px-[35px] py-[15px]"
-          />
+            className="px-[35px] py-[15px] text-white font-medium rounded-lg transition duration-300 shadow-lg 
+             bg-gradient-to-r from-[#caad05] to-[#8b6f02] 
+             hover:from-[#e4c10a] hover:to-[#5a4801]"
+          >
+            Shop Now
+          </a>
         </div>
 
         {/* Right Side: Watch Image */}

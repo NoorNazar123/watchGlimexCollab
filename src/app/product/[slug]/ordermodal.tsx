@@ -3,7 +3,7 @@ import { useState } from "react";
 const OrderModal: React.FC<{
   isOpen: boolean;
   onClose: () => void;
-  productId: number;
+  productId: string;
   variant: string;
 }> = ({ isOpen, onClose, productId, variant }) => {
   const [quantity, setQuantity] = useState(1);
@@ -114,13 +114,15 @@ const OrderModal: React.FC<{
                 <button
                   type="button"
                   onClick={onClose}
-                  className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded"
+                  className="bg-gradient-to-r from-[#caad05] to-[#8b6f02] 
+             hover:from-[#e4c10a] hover:to-[#5a4801] text-white py-2 px-6 rounded"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded"
+                  className="bg-gradient-to-r from-[#caad05] to-[#8b6f02] 
+             hover:from-[#e4c10a] hover:to-[#5a4801] text-white py-2 px-6 rounded"
                 >
                   Submit Order
                 </button>

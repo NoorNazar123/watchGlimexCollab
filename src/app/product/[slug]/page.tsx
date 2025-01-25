@@ -6,7 +6,7 @@ import { products } from "@/data/productdata";
 
 const ProductPage: React.FC = (props: any) => {
   const params: any = use(props.params);
-  const id = Number(params.slug);
+  const id = params.slug;
   const product = products.filter((pro) => pro.id == id)[0];
 
   const [activeImage, setActiveImage] = useState(product.images[0]);
@@ -61,7 +61,7 @@ const ProductPage: React.FC = (props: any) => {
           </div>
           <div className="flex mt-4 space-x-4 overflow-auto">
             {product.images.map((image: any, index: number) => (
-              <img 
+              <img
                 key={index}
                 src={image}
                 alt={`Variant ${index + 1}`}
@@ -97,7 +97,8 @@ const ProductPage: React.FC = (props: any) => {
             Free delivery all over pakistan
           </div>
           <button
-            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300"
+            className="bg-gradient-to-r from-[#caad05] to-[#8b6f02] 
+             hover:from-[#e4c10a] hover:to-[#5a4801] text-white py-3 px-6 rounded-lg text-lg transition duration-300"
             onClick={() => setIsModalOpen(true)}
           >
             Order Now
