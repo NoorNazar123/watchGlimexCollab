@@ -84,12 +84,7 @@ const Hero: React.FC = () => {
           <p className="text-gray-300 text-[18px] md:text-lg mb-6">
             {titles[currentTitleIndex].desc}
           </p>
-          {/* <a
-            href="#products"
-            className="hover:bg-[#374151] bg-[#11141a] text-white py-3 px-6 rounded-lg text-lg transition duration-300"
-          >
-            Shop Now
-          </a> */}
+
           <Button
             children="Shop Now"
             href="#products"
