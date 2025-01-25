@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import { Facebook, Instagram, MessageCircle } from "react-feather";
 
 const socialLink = () => {
   return (
     <div className="flex flex-col items-center md:items-center">
-
       <div className="flex space-x-4">
         {/* Facebook Button */}
         <a
@@ -40,7 +39,7 @@ const socialLink = () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default socialLink 
+export default socialLink;

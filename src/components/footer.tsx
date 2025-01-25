@@ -34,7 +34,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
           {/* Clickable Email */}
           <p className="text-sm">
-            Email:{" "}
+            Email:
             <a
               href="mailto:watchglamix@gmail.com"
               className="text-blue-500 hover:underline"

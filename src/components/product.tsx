@@ -10,18 +10,26 @@ const ProductSection: React.FC = () => {
   const [category, setCategory] = useState<string>("all");
 
   // Filter products based on the selected category
-  const filteredProducts = category === "all"
-    ? products
-    : products.filter(product => product.gender === category);
+  const filteredProducts =
+    category === "all"
+      ? products
+      : products.filter((product) => product.gender === category);
 
   return (
     <section id="products" className="relative bg-[#0c1425] text-[#fff] py-16">
       <div className="container mx-auto relative z-20">
-        <h2 className="text-center text-3xl md:text-5xl font-900 mb-10">Our Products</h2>
+        <h2 className="text-center text-3xl md:text-5xl font-900 mb-10">
+          Our Products
+        </h2>
 
         {/* Buttons to filter products */}
         <div className="text-center mb-6 flex w-[90%] mx-auto justify-center  gap-2 md:gap-4 px-4 md:px-2 ">
-          <Button onClick={() => setCategory("all")} className="hidden md:block">All</Button>
+          <Button
+            onClick={() => setCategory("all")}
+            className="hidden md:block"
+          >
+            All
+          </Button>
           <Button onClick={() => setCategory("men")}>Men</Button>
           <Button onClick={() => setCategory("women")}>Women</Button>
           <Button onClick={() => setCategory("couple")}>Couple</Button>
@@ -74,9 +82,6 @@ const ProductSection: React.FC = () => {
 };
 
 export default ProductSection;
-
-
-
 
 // import React from "react";
 // import Link from "next/link";

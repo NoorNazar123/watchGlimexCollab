@@ -2,7 +2,7 @@ import SocialLink from "./SocialLink";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-[#0c1425] text-white shadow-md sticky top-0 z-50"> 
+    <header className="bg-[#0c1425] text-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        {/* Social Links */} 
+        {/* Social Links */}
         <SocialLink />
       </div>
     </header>
