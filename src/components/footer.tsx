@@ -36,10 +36,10 @@ const Footer = () => {
           <p className="text-sm">
             Email:{" "}
             <a
-              href="mailto:muzi360.karchi@gmail.com"
+              href="mailto:watchglamix@gmail.com"
               className="text-blue-500 hover:underline"
             >
-              muzi360.karchi@gmail.com
+              watchglamix@gmail.com
             </a>
           </p>
           {/* Clickable Phone */}
