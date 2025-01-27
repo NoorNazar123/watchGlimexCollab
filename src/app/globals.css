@@ -17,7 +17,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
   font-family: "Lato", sans-serif;
 }

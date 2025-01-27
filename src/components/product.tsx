@@ -18,8 +18,8 @@ const ProductSection: React.FC = () => {
   return (
     <section id="products" className="relative bg-[#0c1425] text-[#fff] py-16">
       <div className="container mx-auto relative z-20">
-        <h2 className="text-center text-3xl md:text-5xl font-900 mb-10">
-          Our Products
+        <h2 className="text-center text-3xl md:text-5xl font-[4rem] mb-10">
+          Our Watches
         </h2>
 
         {/* Buttons to filter products */}
