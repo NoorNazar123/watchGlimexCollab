@@ -17,7 +17,11 @@ export const products: Product[] = [
     price: "3500Rs",
     gender: "men",
     image: "/hublot/green.jpeg",
-    images: ["/images/hublot/green.jpeg", "/images/hublot/blue.jpeg", "/images/hublot/red.jpeg"],
+    images: [
+      "/images/hublot/green.jpeg",
+      "/images/hublot/blue.jpeg",
+      "/images/hublot/red.jpeg",
+    ],
   },
   {
     id: "led-touch-digital",
@@ -94,7 +98,10 @@ export const products: Product[] = [
     price: "18000Rs",
     gender: "men",
     image: "patexPhilippe/blue.jpeg",
-    images: ["/images/patexPhilippe/blue.jpeg", "/images/patexPhilippe/silver.jpeg"],
+    images: [
+      "/images/patexPhilippe/blue.jpeg",
+      "/images/patexPhilippe/silver.jpeg",
+    ],
   },
   {
     id: "tag-heuer-automatic",
@@ -152,7 +159,12 @@ export const products: Product[] = [
     price: "7000Rs",
     gender: "men",
     image: "/tissot/silverBlack.jpeg",
-    images: ["/images/tissot/silverBlack.jpeg", "/images/tissot/silverWhite.jpeg", "/images/tissot/goldenBlack.jpeg", "/images/tissot/goldenSilver.jpeg"],
+    images: [
+      "/images/tissot/silverBlack.jpeg",
+      "/images/tissot/silverWhite.jpeg",
+      "/images/tissot/goldenBlack.jpeg",
+      "/images/tissot/goldenSilver.jpeg",
+    ],
   },
   {
     id: "rolex",
@@ -170,23 +182,24 @@ export const products: Product[] = [
       "/images/rolex/blackSilver.jpeg",
       "/images/rolex/goldenBlack.jpeg",
       "/images/rolex/goldenBlackSilver.jpeg",
-      "/images/rolex/goldenGray.jpeg"],
+      "/images/rolex/goldenGray.jpeg",
+    ],
   },
   {
-    "id": "quartz",
-    "title": "Quartz",
-    "description": "New Arrival! Stone case, available in 6 vibrant colors.",
-    "price": "1800Rs",
-    "gender": "women",
-    "image": "/quartz/silver.jpeg",
-    "images": [
+    id: "quartz",
+    title: "Quartz",
+    description: "New Arrival! Stone case, available in 6 vibrant colors.",
+    price: "1800Rs",
+    gender: "women",
+    image: "/quartz/silver.jpeg",
+    images: [
       "/images/quartz/lightGolden.jpeg",
       "/images/quartz/silverBlack.jpeg",
       "/images/quartz/silverGolden.jpeg",
       "/images/quartz/silverWhite.jpeg",
       "/images/quartz/silver.jpeg",
       "/images/quartz/silverLightBlack.jpeg",
-    ]
+    ],
   },
   // new add product
   {
@@ -274,7 +287,7 @@ export const products: Product[] = [
       "A classic watch for men, combining precision and elegance, perfect for formal and casual occasions.",
     price: "12500Rs", // Price adjusted as it's now sold separately
     gender: "men",
-    image: "/longinesMan/goldenSilverWhite.jpeg",  // Image for men
+    image: "/longinesMan/goldenSilverWhite.jpeg", // Image for men
     images: [
       "/images/longinesMan/goldenSilverWhite.jpeg",
       "/images/longinesMan/goldenWhite.jpeg",
@@ -295,7 +308,7 @@ export const products: Product[] = [
       "A refined watch for women, offering a sophisticated design with a touch of elegance for everyday wear.",
     price: "12500Rs", // Price adjusted as it's now sold separately
     gender: "women",
-    image: "/longinesWomen/goldenWhite.jpeg",  // Image for women
+    image: "/longinesWomen/goldenWhite.jpeg", // Image for women
     images: [
       "/images/longinesWomen/goldenWhite.jpeg",
       "/images/longinesWomen/goldenSilver.jpeg",
@@ -336,7 +349,7 @@ export const products: Product[] = [
       "A beautifully crafted women's watch with a timeless design, perfect for those who appreciate quality.",
     price: "12500Rs", // Price adjusted as it's now sold separately
     gender: "women",
-    image: "/omegaWomen/silver.jpeg",  // Image for women
+    image: "/omegaWomen/silver.jpeg", // Image for women
     images: [
       "/images/omegaWomen/fullSilver.jpeg",
       "/images/omegaWomen/silverWhite.jpeg",
@@ -348,7 +361,4 @@ export const products: Product[] = [
       "/images/omegaWomen/side2.jpeg",
     ],
   },
-
 ];
-
-
