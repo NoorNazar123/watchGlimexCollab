@@ -361,4 +361,24 @@ export const products: Product[] = [
       "/images/omegaWomen/side2.jpeg",
     ],
   },
+  {
+  id: "rolex-daytona-panda-edition",
+  title: "Rolex Daytona Panda",
+  description:
+    "Rolex Daytona Panda Edition in stainless steel chain. Available in 3 elegant colors. Price includes free cash on delivery.",
+  price: "3000Rs",
+  gender: "men",
+  image: "/rolexPanda/main.jpeg", // Add the correct main image path
+  images: [
+    "/images/rolexPanda/color1.jpeg",
+    "/images/rolexPanda/color2.jpeg",
+    "/images/rolexPanda/color3.jpeg",
+    "/images/rolexPanda/side1.jpeg",
+    "/images/rolexPanda/side2.jpeg",
+    "/images/rolexPanda/side3.jpeg",
+    "/images/rolexPanda/side4.jpeg",
+    "/images/rolexPanda/main.jpeg",
+  ],
+}
+
 ];
