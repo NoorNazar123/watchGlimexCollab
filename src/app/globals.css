@@ -18,4 +18,5 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth; 
 }
